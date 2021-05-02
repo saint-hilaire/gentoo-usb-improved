@@ -10,8 +10,18 @@ You downloaded the Gentoo installation media from https://www.gentoo.org/downloa
 The file should have the file extension `.iso`   
 You also have a precompiled Master Boot Record on your computer, it should look something like this: `*mbr.bin`   
 
+You have to run this as root.    
 
-You have to run this as root.
+## Usage:
+`./gentoo-usb.sh -t TARGET_PARTITION -m MBR_PATH -i ISO_PATH`   
+Required flags:   
+`-t`: Target partition. Something like `/dev/sdb1`, note that the partition number is required as well.  
+`-m`: MBR-binary. The exact path to the precompiled Master Boot Record. For me, it was `/usr/lib/syslinux/mbr/mbr.bin`   
+`-i`: ISO-file. Exact path to the ISO image that you downloaded   
+Example:   
+`./gentoo-usb.sh -t /dev/sdc1 -m /usr/lib/syslinux/mbr/mbr.bin -i /home/alice/Downloads/install-amd64-minimal-20210425T214502Z.iso"`    
+
+
 
 
 ## WARNING! 
