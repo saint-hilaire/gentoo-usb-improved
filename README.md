@@ -19,7 +19,7 @@ Required flags:
 `-m`: MBR-binary. The exact path to the precompiled Master Boot Record. For me, it was `/usr/lib/syslinux/mbr/mbr.bin`   
 `-i`: ISO-file. Exact path to the ISO image that you downloaded   
 Example:   
-`./gentoo-usb.sh -t /dev/sdc1 -m /usr/lib/syslinux/mbr/mbr.bin -i /home/alice/Downloads/install-amd64-minimal-20210425T214502Z.iso"`    
+`./gentoo-usb.sh -t /dev/sdc1 -m /usr/lib/syslinux/mbr/mbr.bin -i /home/alice/Downloads/install-amd64-minimal-20210425T214502Z.iso`    
 
 
 
